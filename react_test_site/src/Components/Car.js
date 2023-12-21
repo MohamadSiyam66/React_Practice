@@ -1,8 +1,8 @@
-function Car(){
+function Car(props){
+    const { brand, color } = props
+    const text = `Hi, I am a ${color} ${brand} Car`;
     return(
-        <h2>
-            this is a Car
-        </h2>
+        <h2> {text} </h2>
     );
 }
 
