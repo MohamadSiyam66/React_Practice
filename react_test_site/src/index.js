@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Header from './Components/Header';
 import reportWebVitals from './reportWebVitals';
 // import Car from './Components/Car';
 import Garage from './Components/Garage';
@@ -10,7 +11,9 @@ import Garage from './Components/Garage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Garage />
+    {/* <Garage /> */}
+    {/* <Header/> */}
+    <App/>
   </React.StrictMode>
 );
 
