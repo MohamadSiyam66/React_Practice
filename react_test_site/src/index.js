@@ -6,15 +6,23 @@ import Header from './Components/Header';
 import reportWebVitals from './reportWebVitals';
 // import Car from './Components/Car';
 import Garage from './Components/Garage';
-
+import Fcolor from './Components/state/Fcolor';
+import Fcolor2 from './Components/state/Fcolor2';
+import Bike from './Components/Multi state/Ms_Bike';
+import MyForm from './Forms/MyForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     {/* <Garage /> */}
     {/* <Header/> */}
-    <App/>
-  </React.StrictMode>
+    {/* <App/> */}
+    {/* <Fcolor/>
+    <Fcolor2/>
+    <Bike/> */}
+    <MyForm/>
+
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
