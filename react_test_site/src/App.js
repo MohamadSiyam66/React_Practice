@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
@@ -9,6 +10,10 @@ import User from './Components/User';
 //const secNum = Math.floor(Math.random() * 10) + 1
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import New_car from './Components/Routing/New_Car';
+import Old_car from './Components/Routing/Old_car';
+import Login from './Components/Routing/Login';
+import Dashboard from './Components/Routing/Dashboard';
 
 function App() {
   // const [term, setTerm] = useState("");
@@ -34,12 +39,22 @@ function App() {
         <li><Link to='/contact-us'>Contact Details</Link></li>
         <li><Link to='/user/1'>User 1</Link></li>
         <li><Link to='/user/2'>User 2</Link></li>
+        <li><Link to='/car-types/new_car'>New Car</Link></li>
+        <li><Link to='/car-types/old_car'>Old Car</Link></li>
+        <li><Link to='/login'>Login</Link></li>
+
       </ul>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/contact-us' element={<Contact/>} />
           <Route path='/user/:id' element={<User/>} />
+          <Route path='/car-types'>
+            <Route path='new_car' element={<New_car/>} />
+            <Route path='old_car' element={<Old_car/>} />
+          </Route>
+          <Route path='/login' element={<Login/>} />
+          <Route path='/dashboard' element={<Dashboard/>} />
         </Routes>
       </BrowserRouter>
     </div>
