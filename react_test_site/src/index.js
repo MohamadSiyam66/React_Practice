@@ -14,14 +14,15 @@ import MyForm from './Forms/MyForm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    {/* <Garage />
+    {/* <App/>
+    <Garage />
     <Header/>
     <Fcolor/>
     <Fcolor2/>
     <Bike/>
     <MyForm/> */}
 
-    <App/>
+<App/>
 
   </>
 );
